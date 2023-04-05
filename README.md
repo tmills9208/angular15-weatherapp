@@ -4,6 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This is a simple Weather application that I programmed within a few days. Starting from a little video I found, and progressing to also include google maps geocoding so you can enter addresses too. The essentials for a simple OpenAPI Angular Weather App
 
+## Setup - READ FIRST
+
+- Go into `src/environments/environment.ts` to paste your OpenWeatherAPI and Google Maps API Keys. These are required in order for your app to work, and I'm not giving you mine.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
