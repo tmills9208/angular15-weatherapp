@@ -1,0 +1,19 @@
+<div class="container" *ngIf="forecast">
+  <div class="weather-box">
+    <h3>
+      <img
+        [src]="weatherIcon"
+        [alt]="mainWeather?.main"
+        [title]="mainWeather?.main"
+      />{{ forecast.current.temp | number:'1.0-0' }} &#8451;
+    </h3>
+    <h5>Feels like: {{forecast.current.feels_like | number:'1.0-0'}} &#8451;</h5>
+    <br>
+    <p>Humidity: {{forecast.current.humidity}} %</p>
+    <p>Clouds: {{forecast.current.clouds}} %</p>
+    <p>UV Index: {{forecast.current.uvi}}</p>
+    <br>
+    <p>Sunrise: {{forecast.current.sunrise | date:'shortTime'}}</p>
+    <p>Sunset: {{forecast.current.sunset | date:'shortTime'}}</p>
+  </div>
+</div>
